@@ -7,10 +7,6 @@ if (isset($_POST['gender'])) {
     $Person->gender = $_COOKIE['gender'];
 }
 
-echo $_COOKIE['Name'].'<br>';
-echo $_COOKIE['Race'].'<br>';
-echo $Person->gender.'<br>';
-
 $Hero = '';
 
 if ($_COOKIE['Race'] == 'Human') {
@@ -24,6 +20,13 @@ if ($_COOKIE['Race'] == 'Human') {
 $Hero->name   = $_COOKIE['Name'];
 $Hero->race   = $_COOKIE['Race'];
 $Hero->gender = $Person->gender;
-print_r($Hero);
+//print_r($Hero);
 echo '<br>';
+
+?>
+
+<div class="reaction">
+    Alright, <?=$Hero->name?>. So you're a <?=$Hero->gender.' '.$Hero->race?>.
+</div>
+<div class="button"></div>
 

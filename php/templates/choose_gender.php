@@ -1,7 +1,5 @@
 <?php
 
-$Person->name = $_COOKIE['Name'];
-
 if (isset($_POST['race'])) {
     setcookie('Race', $_POST['race']);
     $Person->race = $_POST['race'];
@@ -9,21 +7,16 @@ if (isset($_POST['race'])) {
     $Person->race = $_COOKIE['race'];
 }
 
-$htmltag = '<div class="reaction">';
-
 switch ($Person->race) {
     case 'Human':
-        echo $htmltag . $Person->name.' the human, well well .</div>';
         $female = 'female_human';
         $male   = 'male_human';
         break;
     case 'Elf':
-        echo $htmltag . $Person->name.' the elf, well well .</div>';
         $female = 'female_elf';
         $male   = 'male_elf';
         break;
     case 'Dwarf':
-        echo $htmltag . $Person->name.' the dwarf, well well .</div>';
         $female = 'female_dwarf';
         $male   = 'male_dwarf';
         break;

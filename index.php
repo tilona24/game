@@ -16,8 +16,6 @@ if (isset($_POST['submit_name'])) {
     include('php/templates/enter_name.php');
 }
 
-print_r($Person);
-
 ?>
 
 <!doctype html>
