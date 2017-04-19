@@ -1,0 +1,7 @@
+.col {
+  display: inline-block;
+  width: 10%;
+}
+.col img {
+  width: 100%;
+}

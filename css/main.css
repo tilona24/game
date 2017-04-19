@@ -35,6 +35,13 @@ input[type='radio'] {
 img {
   width: 150px;
 }
+.col {
+  display: inline-block;
+  width: 10%;
+}
+.col img {
+  width: 100%;
+}
 body {
   background-color: black;
   text-align: center;

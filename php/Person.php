@@ -2,6 +2,7 @@
 
 class Person
 {
+    public $face;
     public $name;
     public $gender;
     public $age;

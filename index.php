@@ -7,13 +7,38 @@ include 'php/Dwarf.php';
 $Person = new Person();
 
 if (isset($_POST['submit_name'])) {
-    include 'php/templates/choose_race.php';
+    $switch = 'submitted_name';
 } elseif (isset($_POST['submit_race'])) {
-    include 'php/templates/choose_gender.php';
+    $switch = 'submitted_race';
 } elseif (isset($_POST['submit_gender'])) {
-    include 'php/templates/everythings_chosen.php';
+    $switch = 'submitted_gender';
+} elseif (isset($_POST['start'])) {
+    $switch = 'submitted_start';
 } else {
-    include('php/templates/enter_name.php');
+    $switch = 'opened_game';
+}
+
+switch ($switch) {
+
+    case 'opened_game':
+        include('php/templates/enter_name.php');
+        break;
+
+    case 'submitted_name':
+        include 'php/templates/choose_race.php';
+        break;
+
+    case 'submitted_race':
+        include 'php/templates/choose_gender.php';
+        break;
+
+    case 'submitted_gender':
+        include 'php/templates/everythings_chosen.php';
+        break;
+
+    case 'submitted_start':
+        include 'php/templates/world.php';
+        break;
 }
 
 ?>
