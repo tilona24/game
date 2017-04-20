@@ -42,11 +42,19 @@ img {
 .col img {
   width: 100%;
 }
+.container {
+  position: relative;
+}
+.character {
+  position: absolute;
+  top: 70px;
+  left: 5%;
+}
 body {
   background-color: black;
   text-align: center;
   color: white;
-  padding-top: 60px;
+  padding: 60px 0;
   position: relative;
   margin: 0;
 }

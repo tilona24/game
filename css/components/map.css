@@ -5,3 +5,11 @@
 .col img {
   width: 100%;
 }
+.container {
+  position: relative;
+}
+.character {
+  position: absolute;
+  top: 70px;
+  left: 5%;
+}

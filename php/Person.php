@@ -21,9 +21,9 @@ class Person
     }
 
 
-    public function walk($direction)
+    public function walk()
     {
-
+        echo '<script src="js/walk.js"></script>';
     }
 
 
